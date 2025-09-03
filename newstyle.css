@@ -1,0 +1,397 @@
+/* Allgemeine Layout-Stile */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container-1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.container-2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-3 {
+  margin: 1% 1%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTAINER - TOPICS */
+
+.container-general {
+  width: 31%;
+  padding: 4%;
+  margin: 1% 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+#image-profil {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+  border: 3px solid #fff; /* Optional: Weißer Rand */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Leichter Schatten */
+}
+
+#text_birth {
+  font-size: 20px;
+  font-style: italic;
+}
+
+#text_about_me {
+  margin: 10% 0px;
+  font-size: 20px;
+}
+.container-experience {
+  width: 64%;
+}
+
+.container-skills {
+  /* justify-content: space-between; */
+}
+
+.container-education-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-education {
+  width: 47.5%;
+}
+
+.container-projects {
+  width: 47.5%;
+}
+
+.container-school-square {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-school {
+  width: 45%;
+  margin-right: 5%;
+}
+
+.container-web-development,
+.container-office,
+.container-language {
+  width: 31%;
+}
+
+.container-website-instagram {
+}
+
+.container-form-inputs {
+  width: 99%;
+}
+
+h2 {
+  background-color: #7c2b3e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* background-color: #007bff; */
+
+h3 {
+  text-align: end;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: double;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #88905b;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.office-level {
+  height: 100%;
+  background-color: #4b7994;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.language-level {
+  height: 100%;
+  background-color: #c2a97a;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+footer {
+  /* text-align: center; */
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #c2a97a;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0px 2%;
+  font-size: 18px;
+}
+
+/* Container für das Formular */
+.container-form {
+  width: 100%;
+}
+
+/* Formularelemente untereinander anordnen */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Beschriftungen der Formularelemente */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Eingabefelder und Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+input[type="reset"] {
+  background-color: #7c2b3e;
+}
+
+input[type="submit"] {
+  background-color: #88905b;
+}
+
+input[type="reset"]:hover {
+  background-color: #7c2b3e8a;
+}
+
+input[type="submit"]:hover {
+  background-color: #88905b94;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.button-container input[type="reset"],
+.button-container input[type="submit"] {
+  width: 30%;
+}
+
+/* Placeholder-Stil */
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Stil für das Formular insgesamt */
+/* .container-form form input[type="text"]:focus,
+.container-form form textarea:focus {
+  border-color: #88905B;
+  outline: none;
+} */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #88905b;
+  outline: none;
+  border-width: 3px;
+}
+
+@media (max-width: 768px) {
+  .container-education,
+  .container-general,
+  .container-experience {
+    width: 99%;
+  }
+
+  .container-projects {
+    width: 99%;
+  }
+
+  .container-photo {
+    width: 33%;
+    margin-right: 5%;
+  }
+  .container-info {
+    width: 62%;
+  }
+
+  .container-general {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container-photo {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 0%;
+  }
+  #image-profil {
+    width: 100%; /* Verkleinert das Bild auf 70% der Containerbreite */
+    height: auto; /* Erhält das Seitenverhältnis */
+  }
+
+  #text_about_me {
+    margin: 2% 0px;
+    font-size: 15px;
+  }
+  #text_birth {
+    font-size: 17px;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-education,
+  .container-general,
+  .container-experience {
+    width: 99%;
+  }
+
+  .container-projects {
+    width: 99%;
+  }
+
+  .container-photo {
+    width: 99%;
+  }
+  .container-info {
+    width: 99%;
+  }
+
+  .container-general {
+    flex-direction: column;
+  }
+
+  .container-photo {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 0%;
+  }
+  #image-profil {
+    width: 75%; /* Verkleinert das Bild auf 70% der Containerbreite */
+    height: auto; /* Erhält das Seitenverhältnis */
+  }
+
+  #text_about_me {
+    margin: 2% 0px;
+    font-size: 15px;
+  }
+  #text_birth {
+    font-size: 17px;
+    font-style: italic;
+  }
+  .container-web-development,
+  .container-office,
+  .container-language {
+    width: 99%;
+  }
+}
